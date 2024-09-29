@@ -650,8 +650,12 @@ document.getElementById('bool__nine__btn').addEventListener('click', function ()
 document.getElementById('bool__ten__btn').addEventListener('click', function () {
     let boolTenFirstValue = document.getElementById('bool__ten__value--first').value;
     let boolTenSecondValue = document.getElementById('bool__ten__value--second').value;
+    
     let boolTenCheck=false;
     let boolTenCounter=0;
+
+
+
     if (boolTenFirstValue%2==1) {
         boolTenCounter++;
     }
@@ -669,4 +673,69 @@ document.getElementById('bool__ten__btn').addEventListener('click', function () 
     }
 
 });
+
+
+
+
+
+
+
+
+
+// Xarajat hisoblagch
+
+document.getElementById('cost__btn').addEventListener('click', function () {
+    
+
+    let userMoneyValue = document.getElementById('user__money--value').value;
+
+    let dollorConvertCost=11000.34;
+    let euroConvertCost=12354.03;
+
+    let avia$Cost=500;
+    let hotel$Cost=250;
+    let mouseumEuroCost=120
+
+    let totalCost=((avia$Cost*dollorConvertCost)+(hotel$Cost*dollorConvertCost)+(mouseumEuroCost*euroConvertCost));
+
+    if (totalCost<=userMoneyValue) {
+        alert("Oq yo'l, Alisher!");
+    } else {
+        alert("Alisher, ozgina sabr qilish kerak bo'lar ekan.")
+    }
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+// Xarajat hisoblagch Promt orqali 
+// vazifa shartida promt orqali qabul qilinishi kerak deyilgani uchun ikki xil usulda bajaridim
+
+    
+
+    userMoneyPromtValue=+prompt("Necha pulingiz borligini 'so'm' da kiriting:");
+
+    let dollorPromtConvertCost=11000.34;
+    let euroPromtConvertCost=12354.03;
+
+    let avia$PromtCost=500;
+    let hotel$PromtCost=250;
+    let mouseumPromtEuroCost=120
+
+    let totalPromtCost=((avia$PromtCost*dollorPromtConvertCost)+(hotel$PromtCost*dollorPromtConvertCost)+(mouseumPromtEuroCost*euroPromtConvertCost));
+
+    if (totalPromtCost<=userMoneyPromtValue) {
+        alert("Oq yo'l, Alisher!");
+    } else {
+        alert("Alisher, ozgina sabr qilish kerak bo'lar ekan.")
+    }
 
