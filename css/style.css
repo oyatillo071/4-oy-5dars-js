@@ -67,3 +67,10 @@ button:hover {
   -webkit-box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
           box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
 }
+
+h1, h2 {
+  color: rgb(230, 0, 27);
+  font-family: sans-serif, monospace;
+  font-size: 30px;
+  margin: 40px;
+}

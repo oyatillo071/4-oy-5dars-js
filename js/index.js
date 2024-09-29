@@ -274,4 +274,399 @@ document.getElementById('twelve__btn').addEventListener('click', function () {
 
 
 
+// if 13-mashq
+document.getElementById('thirteen__btn').addEventListener('click', function () {
+    let thirteenFirstValue = parseFloat(document.getElementById('thirteen__value--first').value);
+    let thirteenSecondValue = parseFloat(document.getElementById('thirteen__value--second').value);
+    let thirteenThirdValue = parseFloat(document.getElementById('thirteen__value--third').value);
+    
+    let thirteenMin = thirteenFirstValue;
+    let thirteenMax=thirteenThirdValue;
+
+    if (thirteenSecondValue < thirteenMin) {
+        thirteenMin = thirteenSecondValue;
+    }
+    if (thirteenThirdValue < thirteenMin) {
+        thirteenMin = thirteenThirdValue;
+    }
+
+    if (thirteenMax<thirteenFirstValue) {
+        thirteenMax=thirteenFirstValue;
+    }
+    if (thirteenMax<thirteenSecondValue) {
+        thirteenMax=thirteenSecondValue;
+    }
+
+    // alert(thirteenMax);
+    // alert(thirteenMin);
+
+
+    let thirteenCounter=0;
+    let thirteenMedium=0;
+
+    if (thirteenFirstValue > thirteenMin && thirteenFirstValue < thirteenMax) {
+        thirteenCounter=1;
+        thirteenMedium=thirteenFirstValue;
+    }
+   
+
+    if (thirteenSecondValue > thirteenMin && thirteenSecondValue < thirteenMax) {
+        thirteenCounter=2;
+        thirteenMedium=thirteenSecondValue;
+    }
+    
+    
+    if (thirteenThirdValue > thirteenMin && thirteenThirdValue < thirteenMax) {
+        thirteenCounter=3;
+        thirteenMedium=thirteenThirdValue
+    }
+    
+    
+    alert("Kiritilgan sonlarnig ortachasi "+thirteenMedium+" va uning indeksi "+thirteenCounter);
+
+});
+
+
+
+
+
+
+
+// if 14-mashq
+document.getElementById('fourteen__btn').addEventListener('click', function () {
+    let fourteenFirstValue = parseFloat(document.getElementById('fourteen__value--first').value);
+    let fourteenSecondValue = parseFloat(document.getElementById('fourteen__value--second').value);
+    let fourteenThirdValue = parseFloat(document.getElementById('fourteen__value--third').value);
+    
+    let fourteenMin = fourteenFirstValue;
+    let fourteenMax=fourteenThirdValue;
+
+    if (fourteenSecondValue < fourteenMin) {
+        fourteenMin = fourteenSecondValue;
+    }
+    if (fourteenThirdValue < fourteenMin) {
+        fourteenMin = fourteenThirdValue;
+    }
+
+    if (fourteenMax<fourteenFirstValue) {
+        fourteenMax=fourteenFirstValue;
+    }
+    if (fourteenMax<fourteenSecondValue) {
+        fourteenMax=fourteenSecondValue;
+    }
+
+     alert("Kiritilgan raqamlar orasida eng kichigi "+fourteenMin+" va eng kattasi "+fourteenMax);
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+// if 15-mashq
+
+document.getElementById('fiveteen__btn').addEventListener('click', function () {
+    let fiveteenFirstValue = parseFloat(document.getElementById('fiveteen__value--first').value);
+    let fiveteenSecondValue = parseFloat(document.getElementById('fiveteen__value--second').value);
+    let fiveteenThirdValue = parseFloat(document.getElementById('fiveteen__value--third').value);
+    
+    let fiveteenFirstSum=fiveteenFirstValue+fiveteenSecondValue;
+    let fiveteenSecondSum=fiveteenSecondValue+fiveteenThirdValue;
+    let fiveteenThirdSum=fiveteenFirstValue+fiveteenThirdValue;
+    let fiveteenMaxSum=fiveteenFirstSum;
+    let fiveteenCounter="1 chi va 2 chi sonlar";
+    // 1+2==2+3
+    // 1+3==2+3
+
+    if (fiveteenMaxSum<fiveteenSecondSum) {
+        fiveteenMaxSum=fiveteenSecondSum;
+        fiveteenCounter="2 chi va 3 chi sonlar";
+        
+    }
+    if (fiveteenMaxSum<fiveteenThirdSum) {
+        fiveteenMaxSum=fiveteenThirdSum;
+        fiveteenCounter="1chi va 3 chi sonlar";
+    }
+
+    alert("Yig'indisi eng katta qiymat xosil qiluvchi juft qiymatlar "+fiveteenCounter+" va ularning qiymati "+fiveteenMaxSum);
+
+
+});
+
+
+
+
+
+
+
+
+// boolean 1-mashq
+
+document.getElementById('bool__first__btn').addEventListener('click', function () {
+    let boolfirstValue = document.getElementById('bool__first__value').value;
+    let boolFirstCheck=false;
+    if (boolfirstValue > 0) {
+        boolFirstCheck=true;
+    }
+
+    if (boolFirstCheck==true) {
+        alert("Rost");
+    } else {
+        alert("Yolg'on");
+    }
+
+    // alert(boolFirstCheck);
+});
+
+
+
+
+
+
+
+
+
+// boolean 2-mashq
+
+document.getElementById('bool__second__btn').addEventListener('click', function () {
+    let boolSecondValue = document.getElementById('bool__second__value').value;
+    let boolSecondCheck=false;
+    if (boolSecondValue%2==1) {
+        boolSecondCheck=true;
+    }
+
+    if (boolSecondCheck==true) {
+        alert("Rost");
+    } else {
+        alert("Yolg'on");
+    }
+
+});
+
+
+
+
+
+
+
+
+
+// boolean 3-mashq
+
+document.getElementById('bool__third__btn').addEventListener('click', function () {
+    let boolThirdValue = document.getElementById('bool__third__value').value;
+    let boolThirdCheck=false;
+    if (boolThirdValue%2==0) {
+        boolThirdCheck=true;
+    }
+
+    if (boolThirdCheck==true) {
+        alert("Rost");
+    } else {
+        alert("Yolg'on");
+    }
+
+});
+
+
+
+
+
+
+
+
+
+// boolean 4-mashq
+
+document.getElementById('bool__four__btn').addEventListener('click', function () {
+    let boolFourFirstValue = document.getElementById('bool__four__value--first').value;
+    let boolFourSecondValue = document.getElementById('bool__four__value--second').value;
+    let boolFourCheck=false;
+
+
+    if (boolFourFirstValue>2&&boolFourSecondValue<=3) {
+        boolFourCheck=true;
+    }
+
+    if (boolFourCheck==true) {
+        alert("Rost");
+    } else {
+        alert("Yolg'on");
+    }
+
+});
+
+
+
+
+
+
+
+
+// boolean 5-mashq
+
+document.getElementById('bool__five__btn').addEventListener('click', function () {
+    let boolFiveFirstValue = document.getElementById('bool__five__value--first').value;
+    let boolFiveSecondValue = document.getElementById('bool__five__value--second').value;
+    let boolFiveCheck=false;
+
+
+    if (boolFiveFirstValue>=0||boolFiveSecondValue<-2) {
+        boolFiveCheck=true;
+    }
+
+    if (boolFiveCheck==true) {
+        alert("Rost");
+    } else {
+        alert("Yolg'on");
+    }
+
+});
+
+
+
+
+
+
+
+// boolean 6-mashq
+
+document.getElementById('bool__six__btn').addEventListener('click', function () {
+    let boolSixFirstValue = document.getElementById('bool__six__value--first').value;
+    let boolSixSecondValue = document.getElementById('bool__six__value--second').value;
+    let boolSixThirdValue = document.getElementById('bool__six__value--third').value;
+    let boolSixCheck=false;
+
+
+    if (boolSixFirstValue<=boolSixSecondValue&&boolSixSecondValue<=boolSixThirdValue) {
+        boolSixCheck=true;
+    }
+
+    if (boolSixCheck==true) {
+        alert("Rost");
+    } else {
+        alert("Yolg'on");
+    }
+
+});
+
+
+
+
+
+
+
+
+
+// boolean 7-mashq
+
+document.getElementById('bool__seven__btn').addEventListener('click', function () {
+    let boolSevenFirstValue = document.getElementById('bool__seven__value--first').value;
+    let boolSevenSecondValue = document.getElementById('bool__seven__value--second').value;
+    let boolSevenThirdValue = document.getElementById('bool__seven__value--third').value;
+    let boolSevenCheck=false;
+
+
+    if (boolSevenThirdValue>boolSevenSecondValue&&boolSevenSecondValue>boolSevenFirstValue) {
+        boolSevenCheck=true;
+    }
+
+    if (boolSevenCheck==true) {
+        alert("Rost");
+    } else {
+        alert("Yolg'on");
+    }
+
+});
+
+
+
+
+
+
+
+
+// boolean 8-mashq
+
+document.getElementById('bool__eight__btn').addEventListener('click', function () {
+    let boolEightFirstValue = document.getElementById('bool__eight__value--first').value;
+    let boolEightSecondValue = document.getElementById('bool__eight__value--second').value;
+    let boolEightCheck=false;
+
+    if (boolEightFirstValue%2==1&&boolEightSecondValue%2==1) {
+        boolEightCheck=true;
+    }
+
+    if (boolEightCheck==true) {
+        alert("Rost");
+    } else {
+        alert("Yolg'on");
+    }
+
+});
+
+
+
+
+
+
+
+
+
+// boolean 9-mashq
+
+document.getElementById('bool__nine__btn').addEventListener('click', function () {
+    let boolNineFirstValue = document.getElementById('bool__nine__value--first').value;
+    let boolNineSecondValue = document.getElementById('bool__nine__value--second').value;
+    let boolNineCheck=false;
+
+    if (boolNineFirstValue%2==1||boolNineSecondValue%2==1) {
+        boolNineCheck=true;
+    }
+
+    if (boolNineCheck==true) {
+        alert("Rost");
+    } else {
+        alert("Yolg'on");
+    }
+
+});
+
+
+
+
+
+
+// boolean 10-mashq
+
+document.getElementById('bool__ten__btn').addEventListener('click', function () {
+    let boolTenFirstValue = document.getElementById('bool__ten__value--first').value;
+    let boolTenSecondValue = document.getElementById('bool__ten__value--second').value;
+    let boolTenCheck=false;
+    let boolTenCounter=0;
+    if (boolTenFirstValue%2==1) {
+        boolTenCounter++;
+    }
+    if (boolTenSecondValue%2==1) {
+        boolTenCounter++;
+    }
+    if (boolTenCounter==1) {
+        boolTenCheck=true;
+    }
+        
+    if (boolTenCheck==true) {
+        alert("Rost");
+    } else {
+        alert("Yolg'on");
+    }
+
+});
 
